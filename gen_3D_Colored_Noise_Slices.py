@@ -47,7 +47,7 @@ for selected_slice in range(64):
       
       # Plot 2D slice in the second row
       ax2 = fig.add_subplot(2, 5, i+6)
-      ax2.imshow(central_slice, cmap='viridis')
+      ax2.imshow(np.flipud(central_slice), cmap='viridis')
       # ax2.set_title(f'Beta = {beta:.2f}')
       ax2.axis('off')
 
